@@ -5,6 +5,9 @@ description = "Create a pyproject.toml file for an existing project."
 license = {file = "LICENSE.txt"}
 readme = "README.md"
 requires-python = ">=3.6"
+dependencies = [
+    "bert-pytorch == 0.0.1a4",
+]
 
 [project.scripts]
 poetry = "infer_pyproject.cli:main"

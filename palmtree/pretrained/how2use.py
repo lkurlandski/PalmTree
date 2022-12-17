@@ -2,9 +2,12 @@
 
 """
 
-import eval_utils
+import os
 
-palmtree = eval_utils.UsableTransformer(model_path="./palmtree/transformer.ep19", vocab_path="./palmtree/vocab")
+from . import eval_utils
+
+root = f"{os.path.realpath(os.path.dirname(__file__))}"
+palmtree = eval_utils.UsableTransformer(model_path=f"{root}/palmtree/transformer.ep19", vocab_path=f"{root}/palmtree/vocab")
 
 # Tokens have to be seperated by spaces.
 text = ["mov rbp rdi", 

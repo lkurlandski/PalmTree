@@ -6,8 +6,8 @@ import numpy
 from torch import nn
 import torch.nn.functional as F
 
-from config import *
-import vocab
+from .config import *
+from . import vocab
 
 
 # this function is how I parse and pre-pocess instructions for palmtree. It is very simple and based on regular expressions. 

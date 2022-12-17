@@ -18,6 +18,8 @@ Xuezixiang Li, Yu Qu, and Heng Yin, "PalmTree: Learning an Assembly Language Mod
 }
 ```
 
+## Setup
+```pip install -e path/to/PalmTree```
 
 ## Acknowledgement:
 
